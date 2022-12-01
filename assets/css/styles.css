@@ -30,14 +30,15 @@ body{
     position: fixed;
     left: 0;
     top: 0;
-    width: 25%; 
+    width: 26%; /*25%*/
     height: 100vh;
 }
   .aside-left-content{
     background-color: var(--main-color-white);
       height: 100vh;
-      width: 95%;  
-}
+      width: 95%;  /*95%*/
+   }
+
 .user-picture{
    padding: 20px 0 10px 0;
 }
@@ -95,16 +96,22 @@ ul.menu-lists li:hover{
 
  /***************** CONTENT ***************/
  .content-icon-settings i{
-    font-size: 1.2rem;
-    right: 0;
-    top: 90px;
-    background-color: var(--main-color-white);
-    color: var(--main-color-theme);
-    padding: 5px 13px;
-    border-radius: 5px 0 0 5px;
-    border: 1px solid var(--main-color-pinchard);
-    z-index: 99;
- }
+     font-size: 1.2rem;
+     right: 0;
+     top: 90px;
+     background-color: var(--main-color-white);
+     color: var(--main-color-theme);
+     padding: 5px 13px;
+     border-radius: 5px 0 0 5px;
+     border: 1px solid var(--main-color-pinchard);
+     z-index: 99;
+    }
+/***************** CONTENT-XL ***************/
+  .content-xl{
+         padding: 0 0 0 10px;
+         background-color: var(--main-color-argile);
+  }
+  
 
 /************** SECTIONS  ****************/
 .content section{
@@ -115,11 +122,34 @@ ul.menu-lists li:hover{
 
 
  /*** SECTION-TITLE ***/
+
+ /****** CARET *******/
+
 .section-title h2{
     color: var(--main-color-white);
     padding: 6px 14px 6px 65px;
     background-color: var(--main-color-theme);
+    position: relative;
 }
+.section-title h2::after{
+    background-color: var(--main-color-theme);
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border: 5px solid var(--main-color-theme-dark);
+    border-bottom: 5px solid var(--main-color-argile);
+    border-left: 5px solid var(--main-color-argile);
+}
+
+.bar_2{
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 100vh;
+    background-color: var(--main-color-argile);
+}
+
 .section-title p{
     color: var(--main-color-gray);
 }
@@ -146,6 +176,10 @@ ul.menu-lists li:hover{
         top: 50px;
         left: 0;
     }
+    .aside-left-content {
+        width: 100%; /*98%*/
+        box-shadow: 2px 4px 8px rgb(0 0 0/10%), 0px 12px 18px rgb(0 0 0/10%);
+    }
     .header-username{
         font-size: 1.2rem;
         color: var(--main-color-gray);
@@ -159,6 +193,14 @@ ul.menu-lists li:hover{
     .content section{
         width: 100vw;
         padding-top: 50px;
+    }
+    /****** CARET *******/
+    .content > section > .bar_2{
+        display: none;
+    }
+    .section-title h2::after{
+        content: "";
+        border: none;
     }
     
     
