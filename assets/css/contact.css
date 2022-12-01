@@ -2,15 +2,15 @@
 
 #contact{
     height: 100vh;
-   /* width: 100%; */
     background-color: white;
     overflow-y: auto;
 }
 
 /*** CONTACT-CONTENT ***/
+
 /* GET-IN-TOUCH */
+
 .contact-content{
-   /* margin: 0 75px; */
     margin: 0 auto;
     width: 85%;
 }
@@ -18,7 +18,6 @@
     border-bottom: 1px solid var(--main-color-theme);
 }
 .get-in-Touch{
- /* width: 450px; */
  flex: 1;
 }
 .get-in-Touch h3{
@@ -52,7 +51,6 @@
     color: var(--main-color-theme);
 }
 .contact-form{
- /* width: 450px; */
   flex: 1;
 }
 .contact-form h3{
@@ -144,10 +142,7 @@ form button{
 }
 @media screen and (max-width: 900px) {
     /************** SECTIONS  ****************/
-    #contact{
-       /* height: 111vh; */
-      /*  height: 95vh; */
-    }
+    
     form button{
         margin-bottom: 80px;
     }
@@ -170,7 +165,7 @@ form button{
         width: 90%;
     }
     .form-message textarea {
-        width: 88.5%; /*86.2%*/
+        width: 88.5%; 
         padding: 13px 10px 13px 10px;
     }
     .recaptcha {
