@@ -141,7 +141,6 @@ ul.menu-lists li:hover{
     border-bottom: 5px solid var(--main-color-argile);
     border-left: 5px solid var(--main-color-argile);
 }
-
 .bar_2{
     left: 0;
     top: 0;
@@ -149,6 +148,16 @@ ul.menu-lists li:hover{
     height: 100vh;
     background-color: var(--main-color-argile);
 }
+#about-me > .bar_2{
+    height: 180vh;
+}
+#resume > .bar_2{
+    height: 180vh;
+}
+#portfolio > .bar_2{
+    height: 270vh;
+}
+
 
 .section-title p{
     color: var(--main-color-gray);
