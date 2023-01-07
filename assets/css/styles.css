@@ -179,6 +179,9 @@ ul.menu-lists li:hover{
         left: 0;
         z-index: 888;
     }
+    .content{
+        grid-area: content;
+    }
     #aside-left{
         z-index: 0;
         width: 75%;
@@ -201,7 +204,7 @@ ul.menu-lists li:hover{
     }
     .content section{
         width: 100vw;
-        padding-top: 50px;
+        /* padding-top: 50px; */
     }
     /****** CARET *******/
     .content > section > .bar_2{

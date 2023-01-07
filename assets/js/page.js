@@ -8,7 +8,7 @@ window.onload = () =>{
     var IconBurger = document.querySelector(".header-icon-burger i");
     var menuLists = document.querySelectorAll(".menu-lists > li > a");
     
-    /********  AFFICHACHE/MASQUAGE  PARTIE ASIDE-LEFT ************/
+    /********  AFFICHACHE/MASQUAGE  PARTIE ASIDE-LEFT : clique sur l'icone burger ************/
         
     IconBurger.addEventListener("click", ()=>{
        
@@ -20,7 +20,7 @@ window.onload = () =>{
         }
     })
 
-    /******** MASQUAGE  PARTIE ASIDE-LEFT ************/
+    /******** MASQUAGE  PARTIE ASIDE-LEFT : clique sur un menulist ************/
 
     for (let index = 0; index < menuLists.length; index++) {
         const menuList = menuLists[index];
